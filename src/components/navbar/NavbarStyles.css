@@ -1,0 +1,177 @@
+.NavbarItems {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+  width: 95%;
+  height: 80px;
+  border-radius: 13px;
+  /*CENTRA LA BARRA DE NAVEGACION*/
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  /*HACE QUE LA BARRA DE NAVEGACION SIEMPRE ESTE AL TOPE DE LA PAGINA VISIBLE*/
+  z-index: 9999;
+}
+
+/*.logoimage{
+  width: 80px;
+  height: 80px;
+}*/
+
+
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+}
+
+.nav-links i {
+  padding-right: 10px;
+}
+
+.nav-links:hover {
+  background-color:darkorange;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: darkorange;
+  color: #fff;
+}
+
+.menu-icons{
+  display: none;
+}
+
+
+.fastracklogo{
+  display: block;
+  width: 100%;
+  object-fit:contain;
+  align-items: start;
+
+}
+
+.navbar-logo {
+  color: #151516;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  width: 800%;
+}
+
+/*cOMPORTAMIENTO DE TODA LA BARRA CUANDO SE ENCOGE LA PAGINA*/
+@media screen and (max-width: 850px) {
+  .NavbarItems{
+    z-index:99;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+
+  .nav-menu.active{
+    left:0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-links {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+
+  .nav-links:hover {
+    background: coral;
+    transition: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin:auto;
+    border-radius:4px;
+    width: 80%;
+    background:coral;
+    text-decoration:none ;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+
+  .fastracklogo{
+    display: none;
+  }
+
+  
+  .menu-icons{
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-icons{
+    font-size: 1.7rem;
+    color: orangered;
+  }
+}

@@ -1,0 +1,24 @@
+.Footer{
+  padding: 4rem 6rem;
+  background: rgb(241,5,5);
+background: linear-gradient(264deg, rgba(241,5,5,1) 0%, rgba(249,93,93,1) 50%, rgba(250,147,2,1) 100%);
+
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top i{
+  color: white;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.top i:hover{
+  color: #01959a;
+}

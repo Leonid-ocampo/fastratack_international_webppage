@@ -1,0 +1,54 @@
+.tarjeta_datos{
+
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 15px;
+}
+
+.tarjeta_grupo{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.tarjeta_Curso_individual{
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.tarjeta_Curso_individual img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: -1px 1px 62px -18px rgb(0,0,0,0.70);
+}
+
+
+
+.tarjeta_Curso_individual:hover{
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.19789922805059523) 0%, rgba(252,176,69,1) 100%); 
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+.tarjeta_datos button{
+  color:black;
+  margin-bottom: 2px;
+  display:inline;
+  text-decoration: none;
+}
+
+@media screen and(max-width: 850px) {
+  .tarjeta_Curso_individual{
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,79 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+/*Cambiar el estilo de la imagen de la pagina ABOUT*/
+.hero-mid{
+  width: 100%;
+  height: 70vh;
+  position: relative;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.herotext {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 15px;
+}
+
+.herotext h1 {
+  margin-bottom: 15px;
+  font-size: 3rem;
+  font-weight: 1000;
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.herotext .show{
+  text-decoration: none;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #222;
+}
+
+
+.herotext .show:hover {
+  background-color: #01959a;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width:300px){
+  .herotext h1{
+    padding: 10px 20px;
+  }
+
+  .herotext{
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .herotext .show{
+   
+    background: white;
+    padding: .6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;  
+  }
+
+  .imagenfondo{
+    object-fit: cover;
+  }
+}
